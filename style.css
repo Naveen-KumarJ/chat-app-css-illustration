@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+:root{
+    font-size: 16px;
+    --Pale-Violet:hsl(276, 100%, 81%);
+    --Moderate-Violet: hsl(276, 55%, 52%);
+    --DesaturatedDarkViolet: hsl(271, 15%, 43%);
+    --GrayishBlue:hsl(206, 6%, 79%);
+    --VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    --DarkGrayishViolet:hsl(270, 7%, 64%);
+
+    --LightMagenta: hsl(293, 100%, 63%);
+    --LightViolet: hsl(264, 100%, 61%);
+
+    --White: hsl(0, 0%, 100%);
+    --LightGrayishViolet:hsl(270, 20%, 96%);
+    --VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    --VeryLightMagenta:hsl(289, 100%, 72%);
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.wrapper{
+    padding:4rem 0rem; /*Later remove this*/
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-container{
+    background-color: var(--White);
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    margin: auto;
+    padding: .6rem;
+    border-radius: 2.35rem;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.mobile-container .inner-part{
+    width: 100%;
+    height: 100%;
+    background-color:var(--LightGrayishViolet);
+    border-radius: 1.75rem;
+    overflow: hidden;
+}
+
+
+/* mobile-header-style-part */
+.inner-part .top-header-part{
+    background:linear-gradient(to right, var(--LightViolet),var(--LightMagenta));
+    height: 12.5%;
+    overflow: hidden;
+    border-radius: 0px 0px 5px 5px;
+}
+.white-space{
+    background-color: white;
+    height: 40%;
+    width: 62%;
+    margin: 0px auto;
+    border-radius: 8px 8px 18px 18px;
+    position: relative;
+    top: -12%;
+}
+.header-content-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-part{
+    display: flex;
+    column-gap: .2rem;
+    align-items: center;
+    margin-left: .5rem;
+
+}
+.more-part{
+    margin-right: .75rem;
+}
+.info-part .arr-left-icon{
+    color: var(--White);
+    font-weight: 700;
+}
+.header-content-part .more-part{
+    color: var(--White);
+    font-weight: lighter;
+    opacity: .75;
+}
+.profile-icon{
+    width: 32px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.profile-icon>img{
+    border-radius: 50%;
+}
+.identity{
+    margin-left: .5rem;
+}
+.identity .name>h2{
+    font-size: .85rem;
+    font-weight:500;
+    color: var(--White);
+}
+.identity .status{
+    font-size: .6rem;
+    color: var(--Pale-Violet);
+    margin-top: .2rem;
+}
+
+/* mobile-chat-style-part */
+.chat-content-part{
+    padding: .75rem;
+}
+.left-chat{
+    background-color: #ede5f4;
+    margin-bottom: .8rem;
+    width: 60%;
+    padding: .5rem;
+    border-radius: 1rem 1rem 1rem 0.2rem;
+}
+.left-chat>p{
+    font-size: .6rem;
+    color: var(--Moderate-Violet);
+}
+.right-image-chat{
+    display: flex;
+    column-gap: .75rem;
+    float: right;
+    margin-top: .65rem;
+    margin-bottom: .8rem;
+}
+.right-image-chat>img{
+    width: 52px;
+    border-radius: .75rem;
+}
+.right-chat{
+    clear: right;
+    float: right;
+    background-color: white;
+    margin-bottom: .8rem;
+    width: 60%;
+    padding: .5rem;
+    border-radius: 1rem 1rem .2rem 1rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.right-chat>p{
+    font-size: .6rem;
+    color: var(--DesaturatedDarkViolet);
+}
+.left-chat{
+    clear: right;
+}
+
+.left-checkbox-container{
+    width: 80%;
+    display: grid;
+    row-gap: .8rem;
+}
+.left-checkbox-tab{
+    background: linear-gradient(to right, var(--LightMagenta), var(--LightViolet));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem .5rem .5rem;
+    border-radius: 1rem .5rem .5rem 0.2rem;
+}
+.left-checkbox-tab>h1{
+    font-size: 1.15rem;
+    color: var(--White);
+}
+.left-checkbox-tab .option>input{
+    width: 15px;
+    height: 15px;
+    appearance: none;
+    border: none;
+    outline: 2px solid var(--VeryLightMagenta);
+    border-radius: 50%;
+}
+.left-checkbox-tab .option>label{
+    font-size: .6rem;
+    color: var(--White);
+    opacity: .75;
+}
+.left-checkbox-tab .option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.message-send-container{
+    margin-top: 1.25rem;
+    height: 2rem;
+    position: relative;
+}
+.message-send-container>input{
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem 1.25rem;
+    border-radius: 1.25rem;
+    border: none;
+    outline: none;
+}
+.message-send-container>input::placeholder{
+    font-size: .75rem;
+    color: var(--GrayishBlue);
+}
+.send-tab{
+    position: absolute;
+    top:5%;
+    right: 8px;
+    padding: .45rem;
+    border-radius: 50%;
+    background-color: var(--VeryDarkDesaturatedViolet);
+}
+.send-tab>i{
+    font-weight: bolder;
+    font-size: 1.25rem;
+    color: var(--White);
+}
+
+/* content-style */
+.content-container{
+    margin-top: 5.5rem;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-container>.title{
+    font-weight: 500;
+    font-size: 2.25rem;
+    color: var(--VeryDarkDesaturatedViolet);
+    margin-bottom: 1rem;
+}
+.content-container>.description{
+    color: var(--DarkGrayishViolet);
+    line-height: 1.75rem;
+    padding: 0rem 3rem;
+}
+.background-effect{
+    height: 580px;
+    width: 500px;
+    background:linear-gradient(to bottom, var(--LightMagenta),var(--LightViolet));
+    position: absolute;
+    top: 0;
+    left: -300px;
+    border-radius: 0% 0% 50% 50%;
+    z-index: -1;
+}
+
+
+
+@media screen and (min-width:820px){
+    .wrapper{
+        min-height: 100vh;
+        flex-direction: row;
+    }
+    .content-container{
+        width: 50%;
+        text-align: start !important;
+        justify-self: center;
+        align-self: center;
+    }
+    .content-container>.description{
+        padding: 0rem;
+        width: 52%;
+        align-self: start;
+    }
+    .content-container .title{
+    align-self: start;
+    }
+    .background-effect{
+        left: -100px;
+        height: 600px;
+    }
+    
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
